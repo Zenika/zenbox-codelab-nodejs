@@ -1,7 +1,6 @@
 # zenbox-codelab-nodejs
 
 * Créer un fichier `service.js`
-* Dans ce fichier créer une constante `service`
-* Affecter à `service` un objet contenant une propriété `sayHello` dont la valeur sera une fonction retournant la chaîne de caractère `Hello World`.
+* Ce fichier devra exporter une fonction `sayHello` qui devra retourner la chaine de caractère `Hello` ainsi qu'une fonction `sayWorld` qui devra retourner la chaine de caractère `World`
 * Importer le module `service.js` dans `index.js`.
-* Remplacer la chaine `Hello World` dans `index.js` par l'appel de au service `sayHello`.
+* Remplacer la chaine `Hello World` dans `index.js` un appel de aux services `sayHello` et `sayWorld`.
