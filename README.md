@@ -2,6 +2,6 @@
 
 * Créer un fichier `service.js`
 * Dans ce fichier créer une constante `service`
-* Affecter à `service` un objet contenant une proprété `provideHello` dont la valeur sera une fonction retournant la chaîne de caractère `Hello World`.
-* Importer votre fichier `service.js` dans `index.js` et utiliser.
-* Remplacer la chaine `Hello World` dans `index.js` par l'appel de votre service.
+* Affecter à `service` un objet contenant une propriété `sayHello` dont la valeur sera une fonction retournant la chaîne de caractère `Hello World`.
+* Importer le module `service.js` dans `index.js`.
+* Remplacer la chaine `Hello World` dans `index.js` par l'appel de au service `sayHello`.
