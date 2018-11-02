@@ -1,4 +1,5 @@
 const express = require('express')
+const service = require('./service')
 const rootRouter = express.Router()
 const helloRouter = express.Router()
 
@@ -21,6 +22,10 @@ helloRouter
     })
 
 rootRouter
+    .use(function (req, res, next) {
+        service.log(Date.now() + ' ' + req.method + ' ' + req.originalUrl + '\n')
+        next()
+    })
     .use('/hello', helloRouter)
     .route('/')
     .get(function (req, res) {
