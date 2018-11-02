@@ -1,6 +1,20 @@
 # zenbox-codelab-nodejs
 
-* Créer votre serveur HTTP à l'aide de la librairie `express`. (https://github.com/expressjs/express)
-* On s'attend à lancer le serveur lorsque la commande `node index.js` sera lancé.
-* Le serveur devra écouter le port 4000.
-* Le serveur devra répondre 'Hello World' quand l'utilisateur lancera un requête GET sur /hello
+* Séparer les routes du serveur dans un module `route.js` à l'aide de la documentation : https://expressjs.com/en/guide/routing.html
+* Les nouvelles routes doivent être organisées ainsi :
+** / => "Main page"
+***/hello => "Hello no one"
+****/me => Hello me
+****/world => Hello world
+
+
+Le fichier `index.js` doit ressembler à cela : 
+
+```
+const express = require('express')
+const route = require('./route')
+const app = express()
+
+app.use('/', route)
+app.listen(4000)
+```
