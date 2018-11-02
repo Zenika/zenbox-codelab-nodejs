@@ -1,6 +1,6 @@
-var service = require('./service')
-var express = require('express')
-var app = express()
+const service = require('./service')
+const express = require('express')
+const app = express()
 
 app.get('/hello', function (req, res) {
   res.send(service.sayHello + service.sayWorld)
