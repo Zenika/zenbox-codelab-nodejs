@@ -4,3 +4,4 @@ exports.sayHello = () => 'Hello'
 exports.sayWorld = () => 'World'
 
 exports.log = dataString => fs.appendFile('./out.log', dataString)
+exports.readLog = () => fs.readFile('./out.log')
