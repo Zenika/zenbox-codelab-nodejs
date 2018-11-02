@@ -1,10 +1,9 @@
-const chalk = require('chalk')
-const service = require('./service')
+var service = require('./service')
+var express = require('express')
+var app = express()
 
-console.log(chalk.green(`${service.sayHello()} ${service.sayWorld()}`))
-
-service.log('Hello world\n').then(() => {
-    service.readLog().then(buffer => {
-        console.log(buffer.toString())
-    })
+app.get('/hello', function (req, res) {
+  res.send(service.sayHello + service.sayWorld)
 })
+
+app.listen(4000)
