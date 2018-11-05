@@ -11,7 +11,7 @@ url :           => reponse :
 ```
 
 
-Le fichier `index.js` doit ressembler à cela : 
+Le fichier `index.js` doit être organiser ainsi : 
 
 ```
 const express = require('express')
