@@ -1,6 +1,6 @@
 # zenbox-codelab-nodejs
 
-* Séparer les routes du serveur dans un module `route.js` à l'aide de la documentation : https://expressjs.com/en/guide/routing.html
+* Isoler les routes du serveur dans un module `route.js` à l'aide de la documentation : https://expressjs.com/en/guide/routing.html
 * Les nouvelles routes doivent être organisées ainsi :
 ```
 url :           => reponse :
