@@ -5,9 +5,9 @@
 ```
 url :           => reponse :
 /               => "Main page"
-    /hello      => "Hello no one"
-        /me     => "Hello me"
-        /world  => "Hello world"
+/hello          => "Hello no one"
+/hello/me       => "Hello me"
+/hello/world    => "Hello world"
 ```
 
 
