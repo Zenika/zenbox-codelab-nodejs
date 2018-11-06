@@ -1,6 +1,6 @@
 # zenbox-codelab-nodejs
 
-* Creer un middleware pour loger les requêtes sous forme 
+* Creer un middleware pour loger les requêtes
 * Documentation middleware : https://expressjs.com/en/guide/using-middleware.html
 * Documentation API de l'objet req : http://expressjs.com/fr/api.html#req
 * Le format souhaité est le suivant : `[TIMESTAMP] [METHODE HTPP (GET/POST/PUT...)] [URL]`
