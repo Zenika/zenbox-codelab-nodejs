@@ -11,13 +11,13 @@ url :           => reponse :
 ```
 
 
-Le fichier `index.js` doit ressembler à cela : 
+Le fichier `index.js` doit être organiser ainsi : 
 
 ```
 const express = require('express')
-const route = require('./route')
+const routes = require('./routes')
 const app = express()
 
-app.use('/', route)
+app.use('/', routes)
 app.listen(4000)
 ```
